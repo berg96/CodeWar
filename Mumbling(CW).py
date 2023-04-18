@@ -15,3 +15,4 @@ def accum(s):
     return new_string[:-1]
 
 print (accum("abcd"))
+print (accum("ZpglnRxqenU"))
