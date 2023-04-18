@@ -11,8 +11,9 @@ def friend(x):
 
 def friend_2(x):
     for friend in x:
-        if len(friend) == 4:
-            x.pop(friend)
+        print (friend)
+        if len(friend) != 4:
+            x.remove(friend)
     return x
 
 print (friend(["Ryan", "Kieran", "Mark",]))
