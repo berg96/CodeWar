@@ -6,12 +6,8 @@ def accum(s):
     new_string = ''
     i = 0
     for char in s:
-        new_string += char.upper()
-        if i > 0 :
-            for j in range (i):
-                new_string += char.lower()
+        new_string += char.upper() + char.lower()*i + '-'
         i += 1
-        new_string += '-'
     return new_string[:-1]
 
 print (accum("abcd"))
