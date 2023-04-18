@@ -8,7 +8,7 @@ def accum(s):
     for char in s:
         new_string += char.upper()
         if i > 0 :
-            for j in range (i-1):
+            for j in range (i):
                 new_string += char.lower()
         i += 1
         new_string += '-'
