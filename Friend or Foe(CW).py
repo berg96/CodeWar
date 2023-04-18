@@ -4,11 +4,9 @@
 
 def friend(x):
     my_friends = []
-    i = 0
     for friend in x:
         if len(friend) == 4:
-            my_friends[i] = friend
-            i += 1
+            my_friends.append(friend)
     return my_friends
 
 print (friend(["Ryan", "Kieran", "Mark",]))
