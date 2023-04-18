@@ -21,7 +21,7 @@ def is_valid_walk(walk):
             elif step == 'w':
                 coordinates[1] -= 1
             elif step == 'e':
-                coordinates[0] += 1
+                coordinates[1] += 1
         if coordinates[0] == 0 and coordinates[1] == 0:
             return True
         else:
