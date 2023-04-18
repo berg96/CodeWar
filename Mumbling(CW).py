@@ -12,6 +12,6 @@ def accum(s):
                 new_string += char.lower()
         i += 1
         new_string += '-'
-    return new_string.pop(len(new_string)-1)
+    return new_string.replace(new_string[len(new_string)-2],'')
 
 print (accum("abcd"))
