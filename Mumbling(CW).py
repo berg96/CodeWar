@@ -6,10 +6,10 @@ def accum(s):
     new_string = ''
     i = 0
     for char in s:
-        new_string += char.upper
+        new_string += char.upper()
         if i > 0 :
             for j in range (i-1):
-                new_string += char.lower
+                new_string += char.lower()
         i += 1
         new_string += '-'
     return new_string.pop(len(new_string)-1)
