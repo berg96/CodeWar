@@ -11,7 +11,7 @@
 #and will, of course, return you to your starting point. Return false otherwise.
 
 def is_valid_walk(walk):
-    if len(walk) <= 10:
+    if len(walk) == 10:
         coordinates = [0,0]
         for step in walk:
             if step == 'n':
@@ -31,3 +31,4 @@ def is_valid_walk(walk):
     
 print (is_valid_walk(['n','s','n','s','n','s','n','s','n','s']))
 print (is_valid_walk(['w','e','w','e','w','e','w','e','w','e','w','e']))
+print (is_valid_walk(['s', 'w', 'e', 's', 'n', 'e', 'w', 'n']))
