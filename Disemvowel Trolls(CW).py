@@ -5,14 +5,10 @@
 #For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
 def disemvowel(string_):
-    string_ = delete_vowels(string_)
+    for char in string_:
+        if char in ['a','e','i','o','u','A','E','I','O','U']:
+            parts_string = string_.split(char)
+            string_ = ''.join(parts_string)
     return string_
-
-def delete_vowels(string):
-    for i in range(len(string)):
-        if string[i] in ['a','e','i','o','u','A','E','I','O','U']:
-            parts_of_string = string.split(string[i])
-            parts_of_string[1] = delete_vowels(parts_of_string[1])
-    return ''.join(parts_of_string)
 
 print (disemvowel('This website is for losers LOL!'))
