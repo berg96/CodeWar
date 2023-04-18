@@ -30,3 +30,4 @@ def is_valid_walk(walk):
         return False
     
 print (is_valid_walk(['n','s','n','s','n','s','n','s','n','s']))
+print (is_valid_walk(['w','e','w','e','w','e','w','e','w','e','w','e']))
