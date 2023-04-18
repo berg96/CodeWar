@@ -17,5 +17,15 @@ def duplicate_count(text):
             count +=1
     return count
 
+def duplicate_count_2(text):
+    seen = set()
+    duples = set()
+    for char in text:
+        char = char.lower()
+        if char in seen:
+            duples.add(char)
+        seen.add(char)
+    return len(duples)
+
 print (duplicate_count('abcde'))
 print (duplicate_count('aabbcde'))
