@@ -29,6 +29,13 @@ def is_valid_walk(walk):
     else:
         return False
     
+def isValidWalk_2(walk):
+    if (walk.count('n') == walk.count('s') and 
+        walk.count('e') == walk.count('w') and
+        len(walk) == 10):
+            return True
+    return False
+    
 print (is_valid_walk(['n','s','n','s','n','s','n','s','n','s']))
 print (is_valid_walk(['w','e','w','e','w','e','w','e','w','e','w','e']))
 print (is_valid_walk(['s', 'w', 'e', 's', 'n', 'e', 'w', 'n']))
