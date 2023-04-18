@@ -27,5 +27,13 @@ def duplicate_count_2(text):
         seen.add(char)
     return len(duples)
 
+def duplicate_count_3(text):
+    duply_count = 0
+    text=text.lower()
+    for i in set(text):
+        if text.count(i) > 1:
+            duply_count += 1
+    return duply_count
+
 print (duplicate_count('abcde'))
 print (duplicate_count('aabbcde'))
