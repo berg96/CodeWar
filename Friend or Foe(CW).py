@@ -9,14 +9,5 @@ def friend(x):
             my_friends.append(friend)
     return my_friends
 
-def friend_2(x):
-    for friend in x:
-        print (friend)
-        if len(friend) != 4:
-            x.remove(friend)
-    return x
-
 print (friend(["Ryan", "Kieran", "Mark",]))
 print (friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]))
-print (friend_2(["Ryan", "Kieran", "Mark",]))
-print (friend_2(["Ryan", "Jimmy", "123", "4", "Cool Man"]))
