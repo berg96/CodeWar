@@ -5,8 +5,8 @@
 def alphabet_position(text):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     output = ''
-    text.lower
-    for char in text:
+    print(text.lower())
+    for char in text.lower():
         if char in alphabet:
             output += str(alphabet.find(char) + 1) + ' '
     return output[:-1]
