@@ -10,6 +10,5 @@ def find_uniq(arr):
                 return arr[i+1]
         else:
             return arr[i]
-    return n 
 
 print(find_uniq([ 1, 1, 1, 2, 1, 1 ]))
