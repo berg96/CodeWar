@@ -8,6 +8,8 @@ def find_uniq(arr):
                 n = num
             else:
                 n = arr[i+1]
+        else:
+            n = arr[i]
     return n 
 
 print(find_uniq([ 1, 1, 1, 2, 1, 1 ]))
