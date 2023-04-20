@@ -1,11 +1,11 @@
 #There is an array with some numbers. All numbers are equal except for one. Try to find it!
 
 def find_uniq(arr):
-    num = arr[0]
+    n = arr[0]
     for i in range(len(arr)):
-        if num != arr[i]:
-            if num != arr [i+1]:
-                n = num
+        if n != arr[i]:
+            if n != arr [i+1]:
+                n = n
             else:
                 n = arr[i+1]
         else:
