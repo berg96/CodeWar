@@ -2,14 +2,14 @@
 
 def find_uniq(arr):
     n = arr[0]
-    for i in range(len(arr)):
+    for i in range(len(arr)-1):
         if n != arr[i]:
             if n != arr [i+1]:
-                n = n
+                return n
             else:
-                n = arr[i+1]
+                return arr[i+1]
         else:
-            n = arr[i]
+            return arr[i]
     return n 
 
 print(find_uniq([ 1, 1, 1, 2, 1, 1 ]))
