@@ -10,9 +10,7 @@ def solution(number):
         return 0
     else:
         for i in range(number):
-            if i % 3 == 0:
-                sum += i
-            elif i % 5 == 0:
+            if i % 3 == 0 or i % 5 == 0:
                 sum += i
         return sum
 
