@@ -15,4 +15,11 @@ def first_non_repeating_letter(string):
          return char
    return ''
 
-print (first_non_repeating_letter('sTresS'))
+def first_non_repeating_letter_2(string):
+   string_lower = list(string.lower())
+   for char in string:
+      if string_lower.count(char.lower()) == 1:
+         return char
+   return ''
+
+print (first_non_repeating_letter_2('sTresS'))
