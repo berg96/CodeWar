@@ -5,19 +5,19 @@
 #If two words score the same, return the word that appears earliest in the original string.
 #All letters will be lowercase and all inputs will be valid.
 
-def counting_score(word):
-    alphabet = '0abcdefghijklmnopqrstuvwxyz'
-    score = 0
-    for char in word:
-        score += alphabet.find(char)
+def counting_score(word):                           
+    alphabet = '0abcdefghijklmnopqrstuvwxyz'        # 0 at the beginning of the line
+    score = 0                                       # because a = 1 point and must have index 1
+    for char in word:                   
+        score += alphabet.find(char)                # for each char count points and sum
     return score
 
 def high(x):
-    words = x.split()
+    words = x.split()                               # split string on words
     table_score = {}
     for word in words:
-        table_score[word] = counting_score(word)
-    return max(table_score,key=table_score.get)
+        table_score[word] = counting_score(word)    # for each word count score and write to our table
+    return max(table_score,key=table_score.get)     # return key from max of all values in the table
 
 print(high('man i need a taxi up to ubud'))
 print(high('aa b'))
