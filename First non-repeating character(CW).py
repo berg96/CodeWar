@@ -10,9 +10,9 @@
 
 def first_non_repeating_letter(string):
    letters = list(string.lower())
-   for char in letters:
-      if letters.count(char) == 1:
+   for char in string:
+      if letters.count(char.lower()) == 1:
          return char
    return ''
 
-print (first_non_repeating_letter('sTteES'))
+print (first_non_repeating_letter('sTresS'))
