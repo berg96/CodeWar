@@ -13,7 +13,7 @@ def counting_score(word):
     return score
 
 def high(x):
-    words = list(x)
+    words = x.split()
     table_score = {}
     for word in words:
         table_score[word] = counting_score(word)
