@@ -6,7 +6,7 @@
 #All letters will be lowercase and all inputs will be valid.
 
 def counting_score(word):
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    alphabet = '0abcdefghijklmnopqrstuvwxyz'
     score = 0
     for char in word:
         score += alphabet.find(char)
