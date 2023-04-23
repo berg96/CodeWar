@@ -1,5 +1,7 @@
 def generate_hashtag(s):
     words = s.split()
+    if s == '':
+        return False
     new_string = '#'
     for word in words:
         word.lower()
