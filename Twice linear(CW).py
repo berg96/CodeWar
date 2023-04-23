@@ -7,13 +7,12 @@
 #returns the element u(n) of the ordered (with <) sequence u (so, there are no duplicates).
 
 def dbl_linear(n):
-    u = {1}
+    u = [1]
     for i in range(int(n/2) + 1):
-        u.add(i*2 + 1)
-        u.add(i*3 + 1)
-    new_u = list(u)
-    new_u.sort
-    print (new_u)
-    return new_u[n]
+        u.append(u[i]*2 + 1)
+        u.append(u[i]*3 + 1)
+        u.sort()
+    print(u)
+    return u[n]
 
 print(dbl_linear(10))
