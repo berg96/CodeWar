@@ -6,7 +6,7 @@
 def count_ips(list):
     count = 0
     for i in range (4):
-        count += (int(list[i]))*(255**(3-i))
+        count += (int(list[i]))*(256**(3-i))
     return count
 
 
@@ -17,3 +17,4 @@ def ips_between(start, end):
 
 
 print(ips_between("10.0.0.0", "10.0.0.50"))
+print(ips_between("20.0.0.10", "20.0.1.0"))
