@@ -8,11 +8,12 @@
 
 def dbl_linear(n):
     u = [1]
-    for i in range(int(n/2) + 1):
+    for i in range(n):
         u.append(u[i]*2 + 1)
         u.append(u[i]*3 + 1)
+        u = list(set(u))
         u.sort()
     print(u)
     return u[n]
 
-print(dbl_linear(10))
+print(dbl_linear(20))
