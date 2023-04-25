@@ -47,4 +47,4 @@ def format_duration(seconds):
                 output = each + ', ' + output
     return output
 
-print(format_duration(1))
+print(format_duration(365))
