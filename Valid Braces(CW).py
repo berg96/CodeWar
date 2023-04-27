@@ -3,6 +3,8 @@
 
 def valid_braces(string):
     check = ''
+    if string[0] == ')' or string[0] == ']' or string[0] == '}':
+        return False
     for brace in string:
         if brace == '(' or brace == '[' or brace == '{':
             check += brace
@@ -18,4 +20,4 @@ def valid_braces(string):
 
 print (valid_braces("{}()[]"))
 print (valid_braces("([{}])"))
-print (valid_braces("(}"))
+print (valid_braces(")(){}"))
