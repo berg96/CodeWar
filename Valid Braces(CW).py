@@ -3,9 +3,9 @@
 
 def valid_braces(string):
     check = ''
-    if string[0] == ')' or string[0] == ']' or string[0] == '}':
-        return False
     for brace in string:
+        if (brace == ')' or brace == ']' or brace == '}') and len(check) == 0:
+            return False
         if brace == '(' or brace == '[' or brace == '{':
             check += brace
         else:
