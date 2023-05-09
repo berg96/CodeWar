@@ -7,6 +7,6 @@ def descending_order(num):
     output = ''
     for each in list_of_num:
         output += each
-    return output
+    return int(output)
 
-print(descending_order(231))
+print(descending_order(51))
