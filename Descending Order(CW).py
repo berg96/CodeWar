@@ -19,4 +19,8 @@ def Descending_Order_2(num):
     return int(s)
 
 
+def Descending_Order(num):
+    return int(''.join(sorted(list(str(num)), reverse=True)))
+
+
 print(descending_order(51))
