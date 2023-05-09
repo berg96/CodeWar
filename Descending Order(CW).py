@@ -9,4 +9,14 @@ def descending_order(num):
         output += each
     return int(output)
 
+
+def Descending_Order_2(num):
+    s = str(num)
+    s = list(s)
+    s = sorted(s)
+    s = reversed(s)
+    s = ''.join(s)
+    return int(s)
+
+
 print(descending_order(51))
