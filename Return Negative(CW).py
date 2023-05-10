@@ -9,4 +9,9 @@ def make_negative( number ):
     else:
         return 0
     
+
+def make_negative_2( number ):
+    return -abs(number)
+    
+    
 print (make_negative(5))
